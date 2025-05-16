@@ -1,4 +1,4 @@
-/* ------------------------------------------------ Fonts ------------------------------------------------*/
+/* ---------------------------------------------------------- Fonts -------------------------------------------------------------*/
 
 @font-face {
   font-family:"Reagular";
@@ -22,7 +22,8 @@
   font-family: "ExtraLight";
   src: url(/Font/static/Inter_18pt-ExtraLight.ttf) format(truetype);
 }
-/* ------------------------------------------------ Normalize Css ------------------------------------------------*/
+
+/* ------------------------------------------------------- Normalize Css ---------------------------------------------------------*/
 
 *{
   margin: 0;
@@ -31,7 +32,7 @@
   
 }
 
-/* ------------------------------------------------ Start  ------------------------------------------------*/
+/* ----------------------------------------------------------- Main  -------------------------------------------------------------*/
 
 .main{
   min-height: 125vh;
@@ -83,11 +84,13 @@
   z-index: 1;
 }
 
-
 .container{
   position: relative;
   z-index: 3;
 }
+
+/*------------------------------------------------------------- navbar -------------------------------------------------------------*/
+
 
 .header{
   z-index: 100;
@@ -96,7 +99,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 23px 30px;
+  padding: 20px 30px;
   background-color: rgba(255, 255, 255, 0.7); /* معادل C9C9C9 با 8% اوپاسیتی */
   backdrop-filter: blur(15px);
 
@@ -107,13 +110,14 @@
 .logo{
   text-decoration: none;
   color: #000000;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Reagular';
+  
 }
 .navbar{
   display: flex;
   gap: 30px;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 .navbar__item{
   list-style: none;
@@ -123,21 +127,30 @@
   text-decoration: none;
   color: #000000;
   font-family: 'Medium';
-  font-size: 24px;
+  font-size: 18px;
 
 
 }
 .navbar__link:hover{
-  color: #79f8ff;
+  color: #5a5a5a;
 }
 .navbar__btn{
-
+  background-color: #3a3a3a;
+  padding: 9px 11px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
-.navbar__btn_text{
-  
+.navbar__btn:hover{
+  cursor: pointer;
+}
+.navbar__btn svg {
+  color: inherit;
+  width: 18px;
+  height: auto;
 }
 
-/*------------------------------------------------------------- home -------------------------------------------------------------*/
+/*------------------------------------------------------------------ home -------------------------------------------------------------*/
 
 .home{
   box-sizing: border-box;
@@ -146,7 +159,6 @@
 
 }
 .Home-content{
- 
   max-width: 800px;
   text-align: center;
   margin: auto;
@@ -156,27 +168,27 @@
   
 }
 .Home-title{
-  font-size: 73px;
+  font-size: 60px;
   color: #3a3a3a;
   font-family:'Black';
 
 }
 .Home-cption{
-  font-size: 25px;
+  font-size: 22px;
   margin-top: 1rem;
   font-family:'Medium';
   color: #504f4f;
   
 }
 .Home-btn{
-  max-width: 509px;
-  height: 60px;
+  max-width: 500px;
+  height: 58px;
   background:rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(250px);
   padding: 12px 10px;
   display: inline-block;
   border: 3px solid #d4d4d4;
-  border-radius: 20px;
+  border-radius: 1rem;
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -186,7 +198,7 @@
 
   background-color: #3a3a3a;
   color: #fafafa;
-  padding: 7px 50px;
+  padding: 8px 50px;
   border-radius: 10px;
   margin-right: 15px;
   text-decoration: none;
@@ -197,7 +209,7 @@
   
   background-color: #3AA3AF;
   color: #fafafa;
-  padding: 7px 65px;
+  padding: 8px 65px;
   border-radius: 10px;
   text-decoration: none;
   font-family: 'Bold';
@@ -205,20 +217,33 @@
 .poster{
   display: flex;
   justify-content: center;
-  gap: 17px;
-  margin-top: 130px;
+  gap: 12px;
+  margin-top: 125px;
 }
 .poster-cards{
-  width: 280px;
-  height: 370px;
-  background: rgb(170, 170, 124);
+  width: 255px;
+  height: 330px;
+  /* background: rgb(252, 252, 50); */
   border: 6px solid #FFFFFF;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  background-image: url(/image/95.png);
+  background-image: url(/image/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
+.poster-cards:nth-child(2){
+  background-image: url(/image/2.jpg);
+}
+.poster-cards:nth-child(3){
+  background-image: url(/image/4.jpg);
+}
+.poster-cards:nth-child(4){
+  /* background-image: url(/image/5.jpg); */
+  background-image: url(/image/6.jpg);
+}
+
 .poster-card__content{
   background-color: rgba(102, 102, 102, 0.08);
   backdrop-filter: blur(7.5px);
@@ -229,7 +254,7 @@
   width: 100%;
   justify-content: space-between;
   padding: 0px 17px;
-  height: 94px;
+  height: 80px;
   align-items: center;
 }
 .poster-text{
@@ -268,8 +293,7 @@
   background-color: #3a3a3a;
   width: 220px;
   align-items: center;
-  margin: auto;
-  margin-top: 30px;
+  margin: 70px auto;
   color: #fafafa;
   padding: 7px 5px;
   border-radius: 10px;
@@ -281,3 +305,5 @@
   font-family: 'Bold';
   text-align: center;
 }
+
+/*------------------------------------------------------------- Gallary -------------------------------------------------------------*/
