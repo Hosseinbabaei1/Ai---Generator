@@ -2,9 +2,26 @@
 
 @font-face {
   font-family:"Reagular";
-  src: local('Reagular') url(/Font/static/Inter_18pt-Regular.ttf) format('truetype') ;
+  src: url(/Font/static/Inter_18pt-Regular.ttf) format('truetype') ;
+}
+@font-face {
+  font-family:"Black";
+  src: url(/Font/static/Inter_18pt-Black.ttf) format('truetype') ;
 }
 
+@font-face {
+  font-family:"Medium";
+  src: url(/Font/static/Inter_18pt-Medium.ttf) format('truetype') ;
+}
+@font-face {
+  font-family:"Bold";
+  src: url(/Font/static/Inter_18pt-Bold.ttf) format('truetype') ;
+}
+
+@font-face {
+  font-family: "ExtraLight";
+  src: url(/Font/static/Inter_18pt-ExtraLight.ttf) format(truetype);
+}
 /* ------------------------------------------------ Normalize Css ------------------------------------------------*/
 
 *{
@@ -71,6 +88,7 @@
   position: relative;
   z-index: 3;
 }
+
 .header{
   z-index: 100;
   position: fixed;
@@ -80,6 +98,8 @@
   width: 100%;
   padding: 23px 30px;
   background-color: rgba(255, 255, 255, 0.7); /* معادل C9C9C9 با 8% اوپاسیتی */
+  backdrop-filter: blur(15px);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,7 +107,8 @@
 .logo{
   text-decoration: none;
   color: #000000;
-  font-weight:bold;
+  font-size: 24px;
+  font-family: 'Reagular';
 }
 .navbar{
   display: flex;
@@ -96,11 +117,14 @@
 }
 .navbar__item{
   list-style: none;
+  
 }
 .navbar__link{
   text-decoration: none;
   color: #000000;
-  font-family: '';
+  font-family: 'Medium';
+  font-size: 24px;
+
 
 }
 .navbar__link:hover{
@@ -111,4 +135,149 @@
 }
 .navbar__btn_text{
   
+}
+
+/*------------------------------------------------------------- home -------------------------------------------------------------*/
+
+.home{
+  box-sizing: border-box;
+  padding-top: 182px;
+
+
+}
+.Home-content{
+ 
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.Home-title{
+  font-size: 73px;
+  color: #3a3a3a;
+  font-family:'Black';
+
+}
+.Home-cption{
+  font-size: 25px;
+  margin-top: 1rem;
+  font-family:'Medium';
+  color: #504f4f;
+  
+}
+.Home-btn{
+  max-width: 509px;
+  height: 60px;
+  background:rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(250px);
+  padding: 12px 10px;
+  display: inline-block;
+  border: 3px solid #d4d4d4;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  
+  }
+.Home-btn__left{
+
+  background-color: #3a3a3a;
+  color: #fafafa;
+  padding: 7px 50px;
+  border-radius: 10px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-family: 'Bold';
+
+}
+.Home-btn__rigth{
+  
+  background-color: #3AA3AF;
+  color: #fafafa;
+  padding: 7px 65px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Bold';
+}
+.poster{
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 130px;
+}
+.poster-cards{
+  width: 280px;
+  height: 370px;
+  background: rgb(170, 170, 124);
+  border: 6px solid #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(/image/95.png);
+
+}
+.poster-card__content{
+  background-color: rgba(102, 102, 102, 0.08);
+  backdrop-filter: blur(7.5px);
+  border-top: 2px solid rgba(102, 102, 102, 0.09);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 17px;
+  height: 94px;
+  align-items: center;
+}
+.poster-text{
+
+}
+.poster-text h4 {
+  color: white;
+  font-family: 'Bold';
+  font-size: 16px;
+  
+}
+.poster-text p{
+  margin-top: 5px;
+}
+.poster-text{
+  font-family: 'ExtraLight';
+  font-size: 14px;
+  color: #FFFFFF;
+  /* margin-bottom: 20px; */
+}
+
+.poster-card__btn{
+  background-color: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(75px);
+  text-decoration: none;
+  padding: 18px 25px;
+  border-radius: 12px;
+  font-family: 'Reagular';
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.poster-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  background-color: #3a3a3a;
+  width: 220px;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  color: #fafafa;
+  padding: 7px 5px;
+  border-radius: 10px;
+  font-family: 'Bold';
+}
+.poster-btn__btn{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Bold';
+  text-align: center;
 }
