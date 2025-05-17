@@ -32,6 +32,10 @@
   box-sizing: border-box;
   
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* ----------------------------------------------------------- Main  -------------------------------------------------------------*/
 
@@ -137,11 +141,13 @@
   color: #5a5a5a;
 }
 .navbar__btn{
-  background-color: #3a3a3a;
+  /* background-color: #3a3a3a; */
   padding: 9px 11px;
   display: flex;
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); */
+  color: rgb(0, 0, 0); opacity: .5;
+  background-color: rgb(58, 58, 58); opacity: 0.5;
 }
 .navbar__btn:hover{
   cursor: pointer;
@@ -150,6 +156,10 @@
   color: inherit;
   width: 18px;
   height: auto;
+}
+.navbar__right-placeholder{
+  color: rgb(255, 255, 255); opacity: 0.5;
+  
 }
 
 /*------------------------------------------------------------------ home -------------------------------------------------------------*/
