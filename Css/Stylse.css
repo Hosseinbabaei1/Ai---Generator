@@ -348,7 +348,7 @@
   height: 255px;
   border-radius: 20px;
 }
-.gallary-img:nth-child(2){
+.gallary-item:nth-child(2) .gallary-img{
   background-image: url(/image/img-gallery2.jpg);
 }
 
@@ -401,3 +401,5 @@
   font-size: 18px;
   border-radius: 10px;
 }
+
+
