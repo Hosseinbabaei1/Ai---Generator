@@ -27,3 +27,4 @@ afterImages.forEach((afterImage) => {
   // شروع انیمیشن برای هر تصویر
   animateBeforeAfter();
 });
+

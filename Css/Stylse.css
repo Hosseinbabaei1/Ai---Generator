@@ -322,7 +322,8 @@ html {
   align-items: center;
   margin: 70px auto;
   color: #fafafa;
-  padding: 7px 5px;
+  /* padding: 7px 5px; */
+  padding: 8px 50px;
   border-radius: 10px;
   font-family: 'Bold';
 }
@@ -352,7 +353,7 @@ html {
   align-items: center;
   box-sizing: border-box;
 
-  
+
 }
 .gallary-item:nth-child(1){
   margin-bottom: 35px;
@@ -406,19 +407,14 @@ html {
 .slider {
   display: none;
 }
-
-
 .gallary-text{
   width:533px;
   padding: 0 40px;
- 
 }
 .gallary-item:nth-child(2) .gallary-text {
   padding: 0;
   max-width: 450px;
 }
-
-
 .gallary-text h4{
   font-family: 'Black';
   font-size: 25px;
@@ -431,33 +427,31 @@ html {
   margin-bottom: 30px;
   
 }
-
-
 .gallery-btn{
   background-color: #3a3a3a;
-  padding: 10px 36px;
+  padding: 8px 36px;
   color: #fafafa;
   text-decoration: none;
   font-family: 'Bold';
   font-size: 18px;
   border-radius: 10px;
+  display: inline-block; /* Error */
 }
-
-
 .gallary-btn-butten{
   display:flex ;
   gap: 10px;
 }
 .gallary-btn-Rigth{
   background-color: #5a5a5a;
-  padding: 10px 15px;
+  padding: 8px 15px;
   color: #fafafa;
   text-decoration: none;
   font-family: 'Bold';
   font-size: 18px;
   border-radius: 10px;
 }
-button:hover,.gallery-btn:hover,.gallary-btn-Rigth:hover{
+button:hover,.gallery-btn:hover,.poster-btn:hover,
+.gallary-btn-Rigth:hover{
   background-color: #58bfff; /* تغییر رنگ پس‌زمینه */
   color: #ffffff; /* تغییر رنگ متن */
   box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); /* سایه زیبا */
@@ -465,5 +459,8 @@ button:hover,.gallery-btn:hover,.gallary-btn-Rigth:hover{
   transition: all 0.2s ease-in-out;
 }
 
+
 /*---------------------------------------------button efekt------------------------------------ */
+
+
 
