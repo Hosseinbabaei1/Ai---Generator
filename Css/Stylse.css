@@ -132,6 +132,7 @@ html {
 .navbar__link{
   text-decoration: none;
   color: #000000;
+  color: #504f4f;
   font-family: 'Medium';
   font-size: 18px;
 
@@ -139,6 +140,8 @@ html {
 }
 .navbar__link:hover{
   color: #5a5a5a;
+  color: #000000;
+
 }
 .navbar__btn{
   /* background-color: #3a3a3a; */
@@ -206,6 +209,7 @@ html {
   align-items: center;
   
   }
+  
 .Home-btn__left{
 
   background-color: #3a3a3a;
@@ -312,7 +316,17 @@ html {
   font-family: 'Reagular';
   color: #FFFFFF;
   font-size: 12px;
+  transition: all 0.3s ease;
+
 }
+.poster-card__btn:hover {
+  color: #fffacd;
+  /* box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4);  */
+  transform: translateY(-3px);
+  padding: 18.5px 25.5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .poster-btn{
   display: flex;
   justify-content: center;
@@ -335,6 +349,7 @@ html {
 }
 
 /*------------------------------------------------------------- Gallary -------------------------------------------------------------*/
+
 .gallary{
   display: flex;
   justify-content: center;
@@ -460,7 +475,6 @@ button:hover,.gallery-btn:hover,.poster-btn:hover,
 }
 
 
-/*---------------------------------------------button efekt------------------------------------ */
-
+/*---------------------------------------------  ------------------------------------ */
 
 

@@ -28,3 +28,10 @@ afterImages.forEach((afterImage) => {
   animateBeforeAfter();
 });
 
+// refresh 
+
+ window.onload = function() {
+    window.scrollTo(0, 0);
+  };
+
+
