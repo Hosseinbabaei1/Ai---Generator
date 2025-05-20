@@ -186,5 +186,114 @@ html {
   box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
   transform: translateY(-3px); 
   transition: all 0.2s ease-in-out;
+ }
+/* -------------------------------------------fotter---------------------------------------------- */
+
+.footer{
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 1;
 }
 
+.fotter-top{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 50px 35px;
+  z-index: 1;
+  border-bottom: 3px solid #ffffff;
+}
+.fotter-item{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  
+
+}
+.fotter-tex{
+  
+}
+.fotter-tex h4{
+  font-family: 'Bold';
+  font-size: 16px;
+}
+.fotter-tex p{
+  font-family: 'Medium';
+  font-size: 14px;
+  width: 400px;
+  color: #3a3a3a;
+}
+
+
+.footer-links h4{
+ font-family: 'Bold';
+  font-size: 16px;
+}
+.fotter-linl-1{
+  text-decoration: none;
+  font-family: 'Medium';
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.fotter-linl-2{
+  text-decoration: none;
+  font-family: 'Medium';
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.fotter-linl-2{
+  text-decoration: none;
+  font-family: 'Medium';
+  font-size: 14px;
+  color: #3a3a3a;
+}
+        
+.fotter-contact h4{
+  font-family: 'Bold';
+  font-size: 16px;
+}
+.fotter-contact-1{
+   text-decoration: none;
+  font-family: 'Medium';
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.fotter-contact-2{
+   text-decoration: none;
+  font-family: 'Medium';
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.fotter-contact-3{
+   text-decoration: none;
+  font-family: 'Medium';
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.fotter-contact-btn{
+  background-color: #5a5a5a;
+  padding: 8px 15px;
+  color: #fafafa;
+  text-decoration: none;
+  font-family: 'Medium';
+  font-size: 12px;
+  border-radius: 10px;
+}
+.fotter-contact-btn:hover{
+    background-color: #58bfff;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
+  transform: translateY(-3px); 
+  transition: all 0.2s ease-in-out;
+}
+.fotter-copyright{
+  padding: 20px;
+  color: #3a3a3a;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Medium';
+  font-size: 14px;
+}
