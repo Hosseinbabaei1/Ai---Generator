@@ -1,166 +1,5 @@
-
-/* ---------------------------------------------------------- Fonts -------------------------------------------------------------*/
-
-@font-face {
-  font-family:"Reagular";
-  src: url(/Font/static/Inter_18pt-Regular.ttf) format('truetype') ;
-}
-@font-face {
-  font-family:"Black";
-  src: url(/Font/static/Inter_18pt-Black.ttf) format('truetype') ;
-}
-
-@font-face {
-  font-family:"Medium";
-  src: url(/Font/static/Inter_18pt-Medium.ttf) format('truetype') ;
-}
-@font-face {
-  font-family:"Bold";
-  src: url(/Font/static/Inter_18pt-Bold.ttf) format('truetype') ;
-}
-
-@font-face {
-  font-family: "ExtraLight";
-  src: url(/Font/static/Inter_18pt-ExtraLight.ttf) format(truetype);
-}
-
-/* ------------------------------------------------------- Normalize Css ---------------------------------------------------------*/
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-}
 html {
   scroll-behavior: smooth;
-}
-
-
-/* ----------------------------------------------------------- Main  -------------------------------------------------------------*/
-
-.main{
-  min-height: 125vh;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.main__background{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  /* height: 12964px; */
-  height: inherit;
-}
-.background-shapes{
-
-}
-.circle__left,.circle__right{
-  
-}
-.circle__left{
-  width: 35.4375rem;
-  height: 35.4375rem;
-  border-radius: 35.4375rem;
-  background: #58BFFF;
-  position: absolute;
-  top: 386px;
-  left: -308px;
-  z-index: 0;
-}
-.circle__right{
-  width: 35.5rem;
-  height: 35.4375rem;
-  border-radius: 35.5rem;
-  background: #5AC4C9;
-  position: absolute;
-  top: 218px;
-  right: -330px;
-  z-index: 0;
-}
-.blur-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1); /* معادل C9C9C9 با 8% اوپاسیتی */
-  backdrop-filter: blur(195px);
-  -webkit-backdrop-filter: blur(100px); /* برای Safari */
-  z-index: 1;
-}
-
-.container{
-  position: relative;
-  z-index: 3;
-}
-
-/*------------------------------------------------------------- navbar -------------------------------------------------------------*/
-
-
-.header{
-  z-index: 100;
-  position: fixed;
-  flex-direction: row;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 30px;
-  background-color: rgba(255, 255, 255, 0.7); 
-  backdrop-filter: blur(15px);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo{
-  text-decoration: none;
-  color: #000000;
-  font-size: 20px;
-  font-family: 'Reagular';
-  
-}
-.navbar{
-  display: flex;
-  gap: 30px;
-  margin-right: 20px;
-}
-.navbar__item{
-  list-style: none;
-  
-}
-.navbar__link{
-  text-decoration: none;
-  color: #000000;
-  color: #504f4f;
-  font-family: 'Medium';
-  font-size: 18px;
-
-
-}
-.navbar__link:hover{
-  color: #5a5a5a;
-  color: #000000;
-
-}
-.navbar__btn{
-  padding: 9px 11px;
-  display: flex;
-  border-radius: 10px;
-  color: rgb(0, 0, 0); opacity: .5;
-  background-color: rgb(58, 58, 58); opacity: 0.5;
-}
-.navbar__btn:hover{
-  cursor: pointer;
-}
-.navbar__btn svg {
-  color: inherit;
-  width: 18px;
-  height: auto;
-}
-.navbar__right-placeholder{
-  color: rgb(255, 255, 255); opacity: 0.5;
-  
 }
 
 /*------------------------------------------------------------------ home -------------------------------------------------------------*/
@@ -206,7 +45,7 @@ html {
   display: flex;
   align-items: center;
   
-  }
+}
 .Home-btn__left{
 
   background-color: #3a3a3a;
@@ -452,13 +291,10 @@ html {
   font-size: 18px;
   border-radius: 10px;
 }
-button:hover,.gallery-btn:hover,.poster-btn:hover{
+button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover{
   background-color: #58bfff;
   color: #ffffff;
   box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
   transform: translateY(-3px); 
   transition: all 0.2s ease-in-out;
 }
-/*---------------------------------------------  ------------------------------------ */
-
-
