@@ -163,4 +163,28 @@ html {
   color: rgb(255, 255, 255); opacity: 0.5;
   
 }
+.poster-btn__btn{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Bold';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  background-color: #3a3a3a;
+  width: 220px;
+  align-items: center;
+  margin: 70px auto;
+  color: #fafafa;
+  padding: 8px 50px;
+  border-radius: 10px;
+  font-family: 'Bold';
+}
+.poster-btn__btn:hover{
+  background-color: #58bfff;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
+  transform: translateY(-3px); 
+  transition: all 0.2s ease-in-out;
+}
 

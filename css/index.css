@@ -159,7 +159,12 @@ html {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.poster-btn{
+
+.poster-btn__btn{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Bold';
+  text-align: center;
   display: flex;
   justify-content: center;
   margin-top: 70px;
@@ -171,12 +176,6 @@ html {
   padding: 8px 50px;
   border-radius: 10px;
   font-family: 'Bold';
-}
-.poster-btn__btn{
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: 'Bold';
-  text-align: center;
 }
 
 /*------------------------------------------------------------- Gallary -------------------------------------------------------------*/
@@ -291,7 +290,7 @@ html {
   font-size: 18px;
   border-radius: 10px;
 }
-button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover{
+button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.poster-btn__btn:hover{
   background-color: #58bfff;
   color: #ffffff;
   box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
