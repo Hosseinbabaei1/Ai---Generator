@@ -1,48 +1,112 @@
-const afterImages = document.querySelectorAll('.after-image'); // انتخاب تمام عناصر .after-image
+document.addEventListener('DOMContentLoaded', () => {
+  // انیمیشن اسلایدر قبل/بعد
+  const afterImages = document.querySelectorAll('.after-image');
 
-afterImages.forEach((afterImage) => {
-  let progress = 0;
-  let direction = 1; // 1 برای جلو رفتن، -1 برای برگشتن
+  afterImages.forEach((afterImage) => {
+    let progress = 0;
+    let direction = 1;
 
-  function easeInOutCubic(t) {
-    return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-  }
-
-  function animateBeforeAfter() {
-    progress += direction * 0.006; // تغییر مقدار به صورت نرم‌تر
-    const easedProgress = easeInOutCubic(progress);
-
-    afterImage.style.clipPath = `polygon(0 0, ${(1 - easedProgress) * 100}% 0, ${(1 - easedProgress) * 100}% 100%, 0 100%)`;
-
-    if (progress >= 1 || progress <= 0) {
-      direction *= -1; // تغییر جهت انیمیشن
-      setTimeout(() => {
-        requestAnimationFrame(animateBeforeAfter); // مکث 2 ثانیه
-      }, 1000); // مکث 2 ثانیه
-    } else {
-      requestAnimationFrame(animateBeforeAfter);
+    function easeInOutCubic(t) {
+      return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
     }
-  }
 
-  // شروع انیمیشن برای هر تصویر
-  animateBeforeAfter();
-});
+    function animateBeforeAfter() {
+      progress += direction * 0.006;
+      const easedProgress = easeInOutCubic(progress);
+      afterImage.style.clipPath = `polygon(0 0, ${(1 - easedProgress) * 100}% 0, ${(1 - easedProgress) * 100}% 100%, 0 100%)`;
 
-// refresh 
-
- window.onload = function() {
-    window.scrollTo(0, 0);
-  };
-
-// اسکرول نرم به گالری 
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if(target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+      if (progress >= 1 || progress <= 0) {
+        direction *= -1;
+        setTimeout(() => {
+          requestAnimationFrame(animateBeforeAfter);
+        }, 1000);
+      } else {
+        requestAnimationFrame(animateBeforeAfter);
+      }
     }
+
+    animateBeforeAfter();
   });
+
+  // اسکرول نرم برای لینک‌های داخلی
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // پاپ‌آپ: باز و بسته شدن و قرار دادن متن پرامپت
+  document.querySelectorAll('[data-popup]').forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      const popupId = this.getAttribute('data-popup');
+      const promptText = this.getAttribute('data-prompt') || "No prompt provided";
+      const popup = document.getElementById(popupId);
+      if (!popup) return;
+      const promptSpan = popup.querySelector('#promptText');
+      if (promptSpan) promptSpan.textContent = promptText;
+      popup.classList.add('show');
+    });
+  });
+
+  // بستن پاپ‌آپ با کلیک روی دکمه یا خارج از باکس
+  document.querySelectorAll('.popup .close-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.popup').classList.remove('show');
+    });
+  });
+
+  document.querySelectorAll('.popup').forEach(popup => {
+    popup.addEventListener('click', e => {
+      if (e.target === popup) popup.classList.remove('show');
+    });
+  });
+
+  // اسلایدر داخلی پاپ‌آپ (before/after)
+  const container = document.querySelector('.container-img-prompts');
+  if (container) {
+    const before = container.querySelector('.before');
+    const slider = container.querySelector('.popup-slider');
+    let isDragging = false;
+
+    container.addEventListener('mousedown', e => {
+      isDragging = true;
+      moveSlider(e.clientX);
+    });
+    document.addEventListener('mouseup', () => isDragging = false);
+    document.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      moveSlider(e.clientX);
+    });
+
+    function moveSlider(x) {
+      const rect = container.getBoundingClientRect();
+      let offset = x - rect.left;
+      offset = Math.max(0, Math.min(offset, rect.width));
+      const percent = (offset / rect.width) * 100;
+      slider.style.transition = 'none';
+      before.style.transition = 'none';
+      slider.style.left = `${percent}%`;
+      before.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+    }
+  }
 });
 
+// تابع کپی کردن متن پرامپت
+function copyPrompt() {
+  const promptText = document.getElementById('promptText')?.textContent;
+  if (!promptText) return alert('هیچ متنی برای کپی وجود ندارد!');
+  navigator.clipboard.writeText(promptText)
+    .then(() => alert('Prompt copied to clipboard!'))
+    .catch(() => alert('Copy failed!'));
+}
+
+// صفحه وقتی بارگذاری میشه اسکرول به بالا
+window.onload = function() {
+  window.scrollTo(0, 0);
+};
+s

@@ -297,3 +297,206 @@ html {
   font-family: 'Medium';
   font-size: 14px;
 }
+
+
+
+
+
+
+
+/* ------------------------------------------------- Popup  ------------------------------------------------- */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup.show {
+  display: flex;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+  height: 450px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+
+.popup-content-left{
+  width: 45%;
+  margin-left: 10px;
+  margin-top: 35px;
+}
+.popup-content-left h4{
+  font-family: 'Bold';
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+
+}
+.popup-menu{
+  list-style: disc inside;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  line-height: 1.8; 
+}
+.popup-menu-item{
+  margin-left: 10px;
+  font-family: 'Light';
+  font-size: 17px;
+}
+.popup-menu-item a {
+  color: #0056A7;
+  text-decoration: none;
+}
+.popup-box{
+  position: absolute;
+  bottom: 23px;
+  background-color: rgb(255, 255, 255);
+  width:342px;
+  height: 90px;
+  border-radius: 15px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.40));
+}
+.popup-content-right{
+  width: 50%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.close-btn {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(15px);
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-self: center;
+  border-radius: 7px;
+  z-index: 3;
+}
+
+/* ------------------------------------------------------- container-img-prompts ------------------------------------------------------- */
+
+.container-img-prompts {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.container-img-prompts img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* بسیار مهم: جلوگیری از کشیدگی و زوم */
+  user-select: none;
+  pointer-events: none;
+}
+
+.before {
+  z-index: 1;
+  clip-path: inset(0 50% 0 0); /* نصف عکس اول نمایش داده میشه */
+}
+
+.after {
+  z-index: 0;
+}
+
+.popup-slider {
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: white;
+  cursor: ew-resize;
+  z-index: 2;
+  outline: none;
+}
+
+/* ----*/
+
+.popup-box-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.popup-box {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 12px 16px 12px 16px; /* پدینگ مساوی */
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  min-height: 60px;
+  line-height: 1.2;
+  
+}
+
+#promptText {
+  display: block;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+    
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  width: 290px;
+  overflow: hidden;
+}
+
+.copy-btn{
+  cursor: pointer;
+  width: 20px;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.copy-btn:hover {
+  transform: scale(1.1);
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
+

@@ -19,20 +19,16 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  background-image: url(/image/1.jpg);
+  background-color: #666666;
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 .poster-cards:nth-child(2){
-  background-image: url(/image/2.jpg);
 }
 .poster-cards:nth-child(3){
-  background-image: url(/image/4.jpg);
 }
 .poster-cards:nth-child(4){
-  /* background-image: url(/image/5.jpg); */
-  background-image: url(/image/6.jpg);
 }
 
 
