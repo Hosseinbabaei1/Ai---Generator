@@ -274,12 +274,15 @@ html {
 }
 .fotter-contact-btn{
   background-color: #5a5a5a;
-  padding: 8px 15px;
+  padding: 8px 8px;
   color: #fafafa;
   text-decoration: none;
   font-family: 'Medium';
   font-size: 12px;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .fotter-contact-btn:hover{
     background-color: #58bfff;

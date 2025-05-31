@@ -109,4 +109,42 @@ function copyPrompt() {
 window.onload = function() {
   window.scrollTo(0, 0);
 };
-s
+
+
+// ---------------------------------------------------- see more -----------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+
+  seeMoreBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const hiddenCards = document.querySelectorAll(".poster-cards.hidden-card");
+    const numberToShow = 8;
+
+    for (let i = 0; i < numberToShow && i < hiddenCards.length; i++) {
+      const card = hiddenCards[i];
+
+      // ابتدا فقط opacity و transform رو برمی‌داریم
+      card.classList.remove("hidden-card");
+
+      // بازنشانی موقعیت اولیه برای انیمیشن
+      card.style.opacity = "0";
+      card.style.transform = "translateY(30px)";
+
+      // اجرای انیمیشن با تاخیر کم برای فعال شدن ترنزیشن
+      setTimeout(() => {
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+        card.style.position = "relative";
+      }, 50);
+    }
+
+    // مخفی کردن دکمه اگر چیزی باقی نمونده
+    if (document.querySelectorAll(".poster-cards.hidden-card").length === 0) {
+      seeMoreBtn.style.display = "none";
+    }
+  });
+});
+
+
