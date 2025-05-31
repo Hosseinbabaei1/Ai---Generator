@@ -146,5 +146,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// ---------------------------------------------------scrole top -----------------------------------------------------------------
+document.querySelector('.footer-scroll-btn').addEventListener('click', function(e) {
+  e.preventDefault();
+  const target = document.getElementById('home');
+  if (target) {
+    const y = target.getBoundingClientRect().top + window.pageYOffset - 100; // 100 پیکسل برای هدر فیکس
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+});
+
+
 
 
