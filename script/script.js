@@ -155,6 +155,23 @@ document.querySelector('.footer-scroll-btn').addEventListener('click', function(
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
 });
+// ---------------------------------------------------copy prompt -----------------------------------------------------------------
+function copyPrompt() {
+  const text = document.getElementById('promptText').innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    showCopyNotification();
+  });
+}
+
+function showCopyNotification() {
+  const notif = document.getElementById('copy-notification');
+  notif.style.display = 'block';
+  notif.style.opacity = '1';
+  setTimeout(() => {
+    notif.style.opacity = '0';
+    setTimeout(() => notif.style.display = 'none', 300);
+  }, 1200);
+}
 
 
 
