@@ -572,27 +572,29 @@ html {
 .dropdown-row {
   display: flex;
   align-items: center;
-  width: calc(50% - 8px); /* دو آیتم در هر ردیف با فاصله */
+  width: calc(50% - 8px);
   margin-bottom: 8px;
-  background: #fff; /* پس‌زمینه آیتم‌ها سفید */
+  background: #fff;
   border-radius: 8px;
-  padding: 1px 3px;
+  padding: 8px 12px; /* پدینگ اضافه شد */
   box-sizing: border-box;
   transition: box-shadow 0.2s, background 0.2s;
-  gap:20px;
+  gap: 16px;
+  overflow: hidden;
+  position: relative;
 }
 
 .dropdown-row:hover {
-  box-shadow: 0 2px 8px rgba(88,191,255,0.10);
   background: #eaf6ff;
+  box-shadow: 0 2px 8px rgba(88,191,255,0.10);
 }
 
 .dropdown-img {
-  width: 120px;
-  height: 70px;
-  border-radius: 10px;
+  width: 100px;
+  height: 60px;
+  border-radius: 8px;
   object-fit: cover;
-  margin-left: 16px;
+  margin-left: 0; /* حذف فاصله اضافی */
   flex-shrink: 0;
   background: #eee;
 }
