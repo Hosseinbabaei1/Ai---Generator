@@ -6,6 +6,7 @@
     <title>Dream morph</title>
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     
@@ -95,10 +96,19 @@
                             </svg> -->
                         
                             <div class="navbar__right-placeholder" >
-                                <span >Coming soon</span>
+                                <!-- جایگزین دکمه‌های قبلی دارک/لایت -->
+                                <div class="theme-toggle">
+                                  <input type="checkbox" class="checkbox" id="theme-checkbox">
+                                  <label for="theme-checkbox" class="checkbox-label">
+                                    <i class="fas fa-moon"></i>
+                                    <i class="fas fa-sun"></i>
+                                    <span class="ball"></span>
+                                  </label>
+                                </div>
                             </div>
-
+                            
                         </div>
+                        
                 </section>
                 <section class="home" id="home">
                     <div class="Home-content">
@@ -117,7 +127,7 @@
                                     <h4>Background</h4>
                                     <p>Remove</p>
                                 </div>
-                                <a href="" class="poster-card__btn" data-popup="popup1" data-prompt="Prompts For Filter Anime">Get start</a>
+                                <a href="#" class="poster-card__btn" data-popup="popup1" data-img="cart-1" data-before="/image/cart-1.png" data-after="/image/cart-1.png">Get start</a>
                             </div>
                         </div>
                         <div class="poster-cards">
@@ -190,7 +200,7 @@
                                 </div>
                                 <div class="gallary-text">
                                     <h4>image Upscaler</h4>
-                                    <p>Quickly enhance and upscale your images in one-click. Super clear, high-resolution results powered by AI — all in just 3 seconds!</p>
+                                    <p>Quickly enhance and upscale your images in one-click. Super clear, high-resolution results powered by AI all in just 3 seconds!</p>
                                     <div class="gallary-btn-butten">
                                         <a href="#" class="gallery-btn" data-popup="popup1" data-prompt="Prompts For Filter image Upscaler">Prompt filter</a>
                                         <a href="/prompts.html" class="gallary-btn-Rigth">more</a>
@@ -275,7 +285,7 @@
               <span id="promptText">Prompt اینجا قرار می‌گیره</span>
               <svg class="copy-btn" onclick="copyPrompt()" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.6665 20H5.33317C4.62593 20 3.94765 19.7191 3.44755 19.219C2.94746 18.7189 2.6665 18.0406 2.6665 17.3334V5.33335C2.6665 4.62611 2.94746 3.94783 3.44755 3.44774C3.94765 2.94764 4.62593 2.66669 5.33317 2.66669H17.3332C18.0404 2.66669 18.7187 2.94764 19.2188 3.44774C19.7189 3.94783 19.9998 4.62611 19.9998 5.33335V6.66669M14.6665 12H26.6665C28.1393 12 29.3332 13.1939 29.3332 14.6667V26.6667C29.3332 28.1394 28.1393 29.3334 26.6665 29.3334H14.6665C13.1937 29.3334 11.9998 28.1394 11.9998 26.6667V14.6667C11.9998 13.1939 13.1937 12 14.6665 12Z"
-                stroke="#120E0E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 stroke-width="2" />
               </svg>
             </div>
 
@@ -284,9 +294,9 @@
             <div class="popup-content-right">
                 <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
                 <div class="container-img-prompts">
-                  <img class="before" src="/image/1.jpg">
-                  <img class="after" src="/image/2.jpg">
-                  <div class="popup-slider"></div>
+                    <img id="popupBefore" class="before" src="" alt="Before Image" />
+                    <img id="popupAfter" class="after" src="" alt="After Image"  />
+                    <div class="popup-slider"></div>
                 </div>
 
             </div>
@@ -297,8 +307,10 @@
     <div id="copy-notification" style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
         prompt copied to clipboard!
     </div>
- 
+    
+    
+    <script src="./script/script.js"></script>
+    <script src="/script/theme.js"></script>
 
-    <script src="/script/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+
+/* ------------------------------------------------------------------------------------ */
+
 .blur-overlay{
     height: 100%;
 }
@@ -16,7 +19,7 @@
 .poster-cards{
   width: 255px;
   height: 330px;
-  border: 6px solid #FFFFFF;
+  /* border: 6px solid #FFFFFF; */
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -50,7 +53,7 @@
 
 }
 .poster-text h4 {
-  color: white;
+  color: var(--text-color-cart);
   font-family: 'Bold';
   font-size: 16px;
   
@@ -61,7 +64,8 @@
 .poster-text{
   font-family: 'ExtraLight';
   font-size: 14px;
-  color: #FFFFFF;
+  color: var(--text-color-cart);
+  
 }
 
 .poster-card__btn{
@@ -71,16 +75,17 @@
   padding: 18px 25px;
   border-radius: 12px;
   font-family: 'Reagular';
-  color: #FFFFFF;
+  color: var(--text-color-cart);
   font-size: 12px;
   transition: all 0.3s ease;
 
 }
 .poster-card__btn:hover {
-  color: #fffacd;
+  color: var(--text-color-cart);
   transform: translateY(-3px);
   padding: 18.5px 25.5px;
   background-color: rgba(0, 0, 0, 0.4);
+  
 }
 
 .hidden-card {

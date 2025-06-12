@@ -4,6 +4,8 @@ html {
 
 /*------------------------------------------------------------------ home -------------------------------------------------------------*/
 
+/*------------------------------------------------------------------ home -------------------------------------------------------------*/
+
 .home{
   box-sizing: border-box;
   padding-top: 182px;
@@ -21,7 +23,7 @@ html {
 }
 .Home-title{
   font-size: 60px;
-  color: #3a3a3a;
+  color: var(--text-color-7);
   font-family:'Black';
 
 }
@@ -29,7 +31,7 @@ html {
   font-size: 22px;
   margin-top: 1rem;
   font-family:'Medium';
-  color: #504f4f;
+  color: var(--text-color-7);
   
 }
 .Home-btn{
@@ -39,7 +41,7 @@ html {
   backdrop-filter: blur(250px);
   padding: 12px 10px;
   display: inline-block;
-  border: 3px solid #d4d4d4;
+  border: 1.5px solid #d4d4d4;
   border-radius: 1rem;
   margin-top: 15px;
   display: flex;
@@ -47,9 +49,8 @@ html {
   
 }
 .Home-btn__left{
-
-  background-color: #3a3a3a;
-  color: #fafafa;
+  background-color: var(--bg-color-3);
+  color :var(--text-color-4);
   padding: 8px 50px;
   border-radius: 10px;
   margin-right: 15px;
@@ -58,27 +59,25 @@ html {
 
 }
 .Home-btn__left:hover{
-  background-color: #58bfff; 
-  color: #ffffff; 
+  background-color: var(--hover-color-2); 
+  color: var(--text-color-4); 
   box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
-  transform: translateY(-3px); 
+  /* transform: translateY(-3px);  */
   transition: all 0.2s ease-in-out; 
 }
 .Home-btn__rigth{
   
-  background-color: #3AA3AF;
-  color: #fafafa;
+  background-color: var(--bg-color-5);
+  color: var(--text-color-4-1);
   padding: 8px 65px;
   border-radius: 10px;
   text-decoration: none;
   font-family: 'Bold';
 }
 .Home-btn__rigth:hover{
-  background-color: #2d2d2d; 
-  color: #ffffff; 
+  background-color: var(--hover-color-3); 
+  color: var(--text-color-4-right);
   transition: all 0.2s ease-in-out; 
-  
-
 }
 .poster{
   display: flex;
@@ -89,7 +88,6 @@ html {
 .poster-cards{
   width: 255px;
   height: 330px;
-  border: 6px solid #FFFFFF;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -110,7 +108,7 @@ html {
 }
 
 .poster-card__content{
-  background-color: rgba(102, 102, 102, 0.08);
+  /* background-color: rgba(102, 102, 102, 0.08); */
   backdrop-filter: blur(7.5px);
   border-top: 2px solid rgba(102, 102, 102, 0.09);
   display: flex;
@@ -123,13 +121,12 @@ html {
   align-items: center;
 }
 .poster-text{
-
+  
 }
 .poster-text h4 {
-  color: white;
   font-family: 'Bold';
   font-size: 16px;
-  
+  color: var(--text-color-cart);
 }
 .poster-text p{
   margin-top: 5px;
@@ -137,7 +134,7 @@ html {
 .poster-text{
   font-family: 'ExtraLight';
   font-size: 14px;
-  color: #FFFFFF;
+  color: var(--text-color-cart);
 }
 
 .poster-card__btn{
@@ -147,13 +144,13 @@ html {
   padding: 18px 25px;
   border-radius: 12px;
   font-family: 'Reagular';
-  color: #FFFFFF;
+  color: var(--text-color-cart);
   font-size: 12px;
   transition: all 0.3s ease;
 
 }
 .poster-card__btn:hover {
-  color: #fffacd;
+  /* color: var(--text-color-1); */
   transform: translateY(-3px);
   padding: 18.5px 25.5px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -163,20 +160,19 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 70px;
-  background-color: #3a3a3a;
   width: 220px;
   align-items: center;
   margin: 70px auto;
-  color: #fafafa;
   padding: 8px 50px;
   border-radius: 10px;
   font-family: 'Bold';
 }
 .poster-btn__btn{
-  color: #FFFFFF;
   text-decoration: none;
   font-family: 'Bold';
   text-align: center;
+  color: var(--text-color-4);
+  background-color: var(--bg-color-3);
 }
 
 /*------------------------------------------------------------- Gallary -------------------------------------------------------------*/
@@ -260,18 +256,19 @@ html {
   font-family: 'Black';
   font-size: 25px;
   margin-bottom: 20px;
+  color: var(--text-color-7);
 }
 .gallary-text p{
-  font-family: 'Reagular';
-  font-size: 20px;
-  color: #5f5f5f;
+  font-family: 'ExtraLight';
+  font-size: 18px;
+  color: var(--text-color-1);
   margin-bottom: 30px;
   
 }
 .gallery-btn{
-  background-color: #3a3a3a;
+  background-color: var(--bg-color-3);
   padding: 8px 36px;
-  color: #fafafa;
+  color: var(--text-color-4);
   text-decoration: none;
   font-family: 'Bold';
   font-size: 18px;
@@ -283,17 +280,17 @@ html {
   gap: 10px;
 }
 .gallary-btn-Rigth{
-  background-color: #5a5a5a;
+  background-color: var(--bg-color-4);
+  color: var(--text-color-4-2);
   padding: 8px 15px;
-  color: #fafafa;
   text-decoration: none;
   font-family: 'Bold';
   font-size: 18px;
   border-radius: 10px;
 }
-button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover{
-  background-color: #58bfff;
-  color: #ffffff;
+button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.poster-btn__btn:hover{
+  background-color: var(--hover-color-2);
+  color: var(--text-color-4-btn);
   box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
   transform: translateY(-3px); 
   transition: all 0.2s ease-in-out;

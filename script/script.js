@@ -173,6 +173,37 @@ function showCopyNotification() {
   }, 1200);
 }
 
+// ------------------------------------------------
 
+document.querySelectorAll('.poster-card__btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const popupId = btn.dataset.popup;
+    const popup = document.getElementById(popupId);
+    if (!popup) return;
 
+    popup.querySelector('#popupBefore').src = btn.dataset.before || '';
+    popup.querySelector('#popupAfter').src = btn.dataset.after || '';
+
+    popup.classList.add('show');
+
+    // ریست اسلایدر به وسط
+    const container = popup.querySelector('.container-img-prompts');
+    const before = container.querySelector('.before');
+    const slider = container.querySelector('.popup-slider');
+
+    slider.style.transition = 'none';
+    before.style.transition = 'none';
+
+    slider.style.left = '50%';
+    before.style.clipPath = 'inset(0 50% 0 0)';
+  });
+});
+
+function closePopup(id) {
+  const popup = document.getElementById(id);
+  if (popup) popup.classList.remove('show');
+}
+
+//---------------------------------------------------------------------------------------------------------------
 
