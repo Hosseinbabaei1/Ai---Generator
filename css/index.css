@@ -91,20 +91,20 @@ html {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  background-image: url(/image/1.jpg);
+  background-image: url(/image/poster1.JPG);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 .poster-cards:nth-child(2){
-  background-image: url(/image/2.jpg);
+  background-image: url(/image/file_00000000790861f79e41f5b26e44dd77.png);
 }
 .poster-cards:nth-child(3){
-  background-image: url(/image/4.jpg);
+  background-image: url(/image/claymation.png);
 }
 .poster-cards:nth-child(4){
   /* background-image: url(/image/5.jpg); */
-  background-image: url(/image/6.jpg);
+  background-image: url(/image/pixar\ 3d.png);
 }
 
 .poster-card__content{
@@ -288,10 +288,4 @@ html {
   font-size: 18px;
   border-radius: 10px;
 }
-button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.poster-btn__btn:hover{
-  background-color: var(--hover-color-2);
-  color: var(--text-color-4-btn);
-  box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
-  transform: translateY(-3px); 
-  transition: all 0.2s ease-in-out;
-}
+

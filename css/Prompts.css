@@ -16,23 +16,181 @@
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-.poster-cards{
-  width: 255px;
-  height: 330px;
-  /* border: 6px solid #FFFFFF; */
-  border-radius: 20px;
+.poster-cards {
+  width: 240px;           /* عرض ثابت */
+  height: 340px;          /* ارتفاع ثابت */
+  border-radius: 18px;
   overflow: hidden;
   position: relative;
-  background-color: #666666;
-  background-repeat: no-repeat;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   background-size: cover;
-
+  background-position: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.poster-cards:nth-child(1){
+  background-image: url(/image/file_00000000eb3c61f7b9e0d955c96e5b23.png);
+  background-size: cover;
+  background-position: center;
 }
 .poster-cards:nth-child(2){
+  background-image: url(/image/Muppetrealistic.png);
+  background-size: cover;
+  background-position: center;
 }
 .poster-cards:nth-child(3){
+  background-image: url(/image/file_00000000afd061f781207413ae474318.png);
+  background-size: cover;
+  background-position: center;
 }
 .poster-cards:nth-child(4){
+  background-image: url(/image/file_00000000711c61f89cca37a360755bf5.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(5){
+  background-image: url(/image/Marble.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(6){
+  background-image: url(/image/legostyle.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(7){
+  background-image: url(/image/IMG_20250607_014124.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(8){
+  background-image: url(/image/file_000000008bcc61f796169637e121274e.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(9){
+  background-image: url(/image/IMG_4294.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(10){
+  background-image: url(/image/ghibli.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(11){
+  background-image: url(/image/claymation.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(12){
+  background-image: url(/image/pixar\ 3d.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(13){
+  background-image: url(/image/IMG_4294.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(14){
+  background-image: url(/image/ghibli.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(15){
+  background-image: url(/image/claymation.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(16){
+  background-image: url(/image/pixar\ 3d.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(17){
+  background-image: url(/image/IMG_4294.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(18){
+  background-image: url(/image/ghibli.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(19){
+  background-image: url(/image/claymation.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(20){
+  background-image: url(/image/pixar\ 3d.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.poster-cards:nth-child(21){
+  background-image: url(/image/IMG_4294.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(22){
+  background-image: url(/image/ghibli.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(23){
+  background-image: url(/image/claymation.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(24){
+  background-image: url(/image/pixar\ 3d.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(25){
+  background-image: url(/image/IMG_4294.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(26){
+  background-image: url(/image/ghibli.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(27){
+  background-image: url(/image/claymation.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(28){
+  background-image: url(/image/pixar\ 3d.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(29){
+  background-image: url(/image/IMG_4294.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(30){
+  background-image: url(/image/ghibli.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(31){
+  background-image: url(/image/claymation.png);
+  background-size: cover;
+  background-position: center;
+}
+.poster-cards:nth-child(32){
+  background-image: url(/image/pixar\ 3d.png);
+  background-size: cover;
+  background-position: center;
 }
 
 

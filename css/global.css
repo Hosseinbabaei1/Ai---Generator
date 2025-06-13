@@ -573,18 +573,19 @@ html {
 }
 
 #promptText {
-  display: block;
-  margin: 0;
-  padding: 0;
-  word-wrap: break-word;
-  white-space: pre-wrap;
-    
-  color: var(--text-color-1);
   position: absolute;
   top: 11px;
   left: 15px;
   width: 290px;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1rem;
+  max-height: calc(1.5em * 4);
+  word-break: break-word;
+  white-space: normal;
 }
 
 .copy-btn{
@@ -759,4 +760,12 @@ html {
 
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(24px);
+}
+
+button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.poster-btn__btn:hover{
+  background-color: var(--hover-color-2);
+  color: var(--text-color-4-btn);
+  box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
+  transform: translateY(-3px); 
+  transition: all 0.2s ease-in-out;
 }
