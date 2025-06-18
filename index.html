@@ -6,25 +6,12 @@
     <title>Dream morph</title>
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     
- 
-    <section class="main">
-        <div class="main__background">
-          
-          <div class="background-shapes">
-            <div class="circle__left"></div>
-            <div class="circle__right"></div>
-            <div class="blur-overlay"></div>
-          </div>
-
-          <div class="container">
-
-                <!-- Home Website -->
-
-                <section class="header">
+    <!-- header -->
+    
+    <header class="header">
                         
                         <a href="#" class="logo">Dream morph</a>
                         
@@ -120,8 +107,6 @@
                                 <div class="theme-toggle">
                                   <input type="checkbox" class="checkbox" id="theme-checkbox">
                                   <label for="theme-checkbox" class="checkbox-label">
-                                    <i class="fas fa-moon"></i>
-                                    <i class="fas fa-sun"></i>
                                     <span class="ball"></span>
                                   </label>
                                 </div>
@@ -129,14 +114,31 @@
                             
                         </div>
                         
-                </section>
+    </header>
+
+    <!-- Main -->
+
+    <section class="main">
+        <div class="main__background">
+          
+          <div class="background-shapes">
+            <div class="circle__left"></div>
+            <div class="circle__right"></div>
+            <div class="blur-overlay"></div>
+          </div>
+
+          <div class="container">
+
+                <!-- Home Website -->
+
+                
                 <section class="home" id="home">
                     <div class="Home-content">
                         <h1 class="Home-title">Studio Open Ai Image Generator</h1>
                         <p class="Home-cption">Find the promt for ChatGPT with one click</p>
 
                         <div class="Home-btn">
-                            <a href="/prompts.html" class="Home-btn__left">Find It</a>
+                            <a href="/prompts.html" class="Home-btn__left">Explore</a>
                             <a href="#gallery" class="Home-btn__rigth">Learn More</a>
                         </div>
                     </div> 
@@ -276,9 +278,6 @@
                 
             </div>
 
-
-
-            
             <!-- Footer Website -->
             
             <section class="footer">
@@ -316,7 +315,6 @@
                 </div>
             </section>
     
-
         </div>
     </section>
 
@@ -365,7 +363,6 @@
     <div id="copy-notification" style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
         prompt copied to clipboard!
     </div>
-    
     
     <script src="./script/script.js"></script>
     <script src="/script/theme.js"></script>

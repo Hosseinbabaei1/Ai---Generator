@@ -190,6 +190,3 @@ function openPopup(el) {
   promptText.innerText = el.getAttribute('data-prompt') || '';
   popup.classList.add('show');
 }
-
-
-

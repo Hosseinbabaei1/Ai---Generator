@@ -28,7 +28,7 @@ html {
 
 }
 .Home-cption{
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 1rem;
   font-family:'Medium';
   color: var(--text-color-7);
@@ -36,14 +36,14 @@ html {
 }
 .Home-btn{
   max-width: 500px;
-  height: 58px;
+  /* height: 53px; */
   background:rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(250px);
-  padding: 12px 10px;
+  padding: 7px 7px;
   display: inline-block;
   border: 1.5px solid #d4d4d4;
   border-radius: 1rem;
-  margin-top: 15px;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   
@@ -183,6 +183,7 @@ html {
   align-items: center;
   height: 100vh;
   box-sizing: border-box;
+  margin-top: 100px;
 }
 .gallary-item{
   width: 1056px;
@@ -202,10 +203,10 @@ html {
 
 .gallary-img {
   overflow: hidden;
-  width: 470px;
+  width: 450px;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 255px;
+  height: 245px;
   border-radius: 20px;
   position: relative;
   position: relative;

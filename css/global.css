@@ -31,10 +31,12 @@
   --text-color-4-btn: #ffffff; /**/
   --text-color-4-right: #ffffff; /**/
   --text-color-5: #F6F6F6;
-  --text-color-6: #5f5f5f;
+  --text-color-6: #4d4d4d;
   --text-color-7: #3a3a3a;
   --text-color-8: #0056A7; /**/
   --text-color-cart: #ffffff;
+  --text-color-box-popup: #000000c4;
+
 
 
   --title-color-1: #3a3a3a;
@@ -66,7 +68,10 @@
 
   --bg-blur-1: rgba(24, 24, 24, 0.1); 
   --bg-blur-2: rgba(24, 24, 24, 0.95); 
-  --bg-blur-3: rgba(0, 0, 0, 0.1); 
+  --bg-blur-3: rgba(0, 0, 0, 0.1);
+  /* --bg-blur-3: rgb(0 0 0 / var(--tw-bg-opacity, 1)) --tw-bg-opacity: 0.3; */
+  
+   
   --bg-blur-overlay: blur(280px);
 
   --text-color-3: #ffffff; /**/
@@ -83,6 +88,8 @@
   --text-color-6: #ffffff; /**/
   --text-color-7: #F6F6F6; /**/
   --text-color-8: #518aae; /**/
+  --text-color-box-popup: #bfbfbf81;
+
 
   --title-color-1: #3a3a3a;
   --title-color-2: #000000;
@@ -215,12 +222,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
 }
+
 
 .logo{
   text-decoration: none;
   color: var(--text-color-1);
-  font-size: 20px;
+  font-size: 17px;
   font-family: 'Reagular';
 }
 
@@ -238,7 +248,7 @@ html {
   text-decoration: none;
   color: var(--text-color-6);
   font-family: 'Medium';
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar__link:hover{
@@ -496,8 +506,8 @@ html {
   right: 15px;
   font-size: 24px;
   cursor: pointer;
-  color: aliceblue;
-  background-color: rgba(255, 255, 255, 0.5); 
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 1.5); 
   backdrop-filter: blur(15px);
   width: 28px;
   height: 28px;
@@ -586,6 +596,7 @@ html {
   max-height: calc(1.5em * 4);
   word-break: break-word;
   white-space: normal;
+  color: var(--text-color-box-popup);
 }
 
 .copy-btn{
@@ -732,8 +743,8 @@ html {
 
 .checkbox-label {
   background-color: #0F0F0F;
-  width: 52px;
-  height: 29px;
+  width: 49px;
+  height: 26px;
   border-radius: 50px;
   position: relative;
   padding: 5px;
@@ -744,13 +755,11 @@ html {
 
 }
 
-.fa-moon { color: #ffffff; }
-.fa-sun { color: #ffffff; }
 
 .checkbox-label .ball {
   background-color: #fff;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   left: 5px;
   top: 4px;
@@ -769,3 +778,5 @@ button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.post
   transform: translateY(-3px); 
   transition: all 0.2s ease-in-out;
 }
+
+

@@ -16,9 +16,9 @@
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-.poster-cards {
-  width: 240px;           /* عرض ثابت */
-  height: 340px;          /* ارتفاع ثابت */
+.poster-cards{
+  width: 255px;
+  height: 330px;
   border-radius: 18px;
   overflow: hidden;
   position: relative;
