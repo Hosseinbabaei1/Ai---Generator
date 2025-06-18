@@ -10,33 +10,25 @@
 </head>
 <body>
     
- 
-    <section class="main">
-        <div class="main__background">
-          
-            <div class="background-shapes">
-                <div class="circle__left"></div>
-                <div class="circle__right"></div>
-                <div class="blur-overlay"></div>
-            </div>
-
-            <div class="container">
-
-                <!-- Home Website -->
-
-                <section class="header">
+    <!-- header -->
+    
+    <header class="header">
                         
                         <a href="#" class="logo">Dream morph</a>
                         
                         <ul class="navbar">
-                            <li class="navbar__item">
-                                <a href="/index.html" class="navbar__link">Home</a>
-                            </li>
-                             <li class="navbar__item dropdown">
+                          <li class="navbar__item">
+                            <a href="/index.html" class="navbar__link">Home</a>
+                          </li>
+                          <li class="navbar__item">
+                            <a href="#gallery" class="navbar__link">Gallery</a>
+                          </li>
+                      
+                        <li class="navbar__item dropdown">
                             <a href="#tools" class="navbar__link">Tools</a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-row"  data-popup="popup1"
-                                        data-prompt="Enhance the image resolution to high quality (4K or higher), remove any noise or blur, sharpen facial details and edges, and preserve original colors and textures. "
+                                        data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
                                         data-img-before="/image/1000013041.jpg"
                                         data-img-after="/image/20250518212531.jpg"
                                         onclick="openPopup(this)">
@@ -90,7 +82,7 @@
                                         <p>Eye-catching product ads with sharp design</p>
                                     </div>
                                 </div>
-                                <div class="dropdown-row">
+                                <div class="dropdown-row" data-popup="popup1" data-prompt="Prompts For Filter Anime">
                                     <img src="/image/3.jpg" alt="Tool 6" class="dropdown-img">
                                     <div class="dropdown-text">
                                         <h5>Ai Image Generatot</h5>
@@ -99,12 +91,14 @@
                                 </div>
                             </div>
                         </li>
-                            <li class="navbar__item">
-                                <a href="/prompts.html" class="navbar__link">Prompts</a>
-                            </li>
+                      
+                          <li class="navbar__item">
+                            <a href="/prompts.html" class="navbar__link">Prompts</a>
+                          </li>
                         </ul>
 
-                       <div class="navbar__btn">
+
+                        <div class="navbar__btn">
                             <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="white"/>
                             </svg> -->
@@ -120,9 +114,23 @@
                             </div>
                             
                         </div>
+                        
+    </header>
 
-                </section>
+    <!-- Main -->
+ 
+    <section class="main">
+        <div class="main__background">
+          
+            <div class="background-shapes">
+                <div class="circle__left"></div>
+                <div class="circle__right"></div>
+                <div class="blur-overlay"></div>
+            </div>
 
+            <div class="container">
+
+                <!-- Home Website -->
 
                 <section class="home">
                     <div class="poster">
